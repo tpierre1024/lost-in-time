@@ -3,30 +3,74 @@
 <head>
   <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
   <title>2000s Futurism – Lost in Time</title>
-  <style>…same as above…</style>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #ff9bdb }
+    .banner { background: #f55ebb; padding: 20px; text-align: center; font-size: 2em; font-weight: bold }
+    .container { display: flex; padding: 20px }
+    .sidebar { width: 220px; padding-right: 20px }
+    .sidebar a { display: block; margin-bottom: 10px; padding: 10px; background: #e6ffd7; border: 1px solid #aaa; text-decoration: none; color: #333; border-radius: 4px }
+    .content { flex: 1; background: #a8d9f7; padding: 20px; border: 1px solid #aaa }
+    .columns { display: flex; gap: 10px }
+    .column { flex: 1; padding: 10px; background: #94f4d9; border: 1px solid #ddd }
+    .column img { width: 100%; height: auto; display: block; margin-bottom: 5px; border-radius: 8px }
+    .img-caption { font-size: 0.9em; color: #333; margin-bottom: 20px; text-align: center }
+    .media-section { margin-top: 30px; background: #fff0f9; padding: 15px; border-radius: 8px; border: 1px solid #ccc }
+    .media-section h4 { margin-top: 0 }
+    iframe { width: 100%; height: 150px; border: none; border-radius: 8px }
+  </style>
 </head>
 <body>
   <div class="banner">Lost in Time: Mini Museums!</div>
   <div class="container">
     <nav class="sidebar">
       <h3>Explore Exhibits</h3>
-      <a href="dust-bowl.html">Dust Bowl Diaries</a>
-      <a href="y2k-futurism.html">2000s Futurism</a>
-      <a href="ancient-civilizations.html">Ancient Civilizations</a>
+      <a href="index.html">Dust Bowl Diaries</a>
+      <a href="y2k.html">2000s Futurism</a>
+      <a href="ancient-civ.html">Ancient Civilizations</a>
     </nav>
     <section class="content">
       <h2>The Forgotten Futurism of the Early 2000s</h2>
       <div class="columns">
-        <div class="column"><h3>Gadgets</h3><p>[Palm Pilots, flip phones]</p></div>
-        <div class="column"><h3>Fashion Flops</h3><p>Futuristic outfits that didn’t launch</p></div>
-        <div class="column"><h3>Retro Web</h3><p>Old websites & GeoCities vibes</p></div>
+        <div class="column">
+          <h3>Gadgets</h3>
+          <img src="https://www.progress.com/images/default-source/blogs/2023/2023-08/the-y2k-gadgets-you-know-and-love-cue-nostalgia-this-back-to-school-season_body-image-2.jpg?sfvrsn=fdfc5d0b_1" alt="Side Phones" />
+          <div class="img-caption">Side phones: Compact communication devices before smartphones</div>
+          <img src="https://www.progress.com/images/default-source/blogs/2023/2023-08/the-y2k-gadgets-you-know-and-love-cue-nostalgia-this-back-to-school-season_body-image-1.jpg?sfvrsn=d1aa0608_1" alt="iMac" />
+          <div class="img-caption">iMac G3: A colorful glimpse into the future of personal computing</div>
+        </div>
+        <div class="column">
+          <h3>Fashion Flops</h3>
+          <img src="https://i.pinimg.com/736x/53/f8/34/53f834831ea512d171991cb00a28b8dc.jpg" alt="Frosted tips" />
+          <div class="img-caption">Frosted tips: The defining boy-band hairstyle of the Y2K era (Sorry, JT!)</div>
+          <img src="https://i.etsystatic.com/20113137/r/il/1edbdf/6445901495/il_570xN.6445901495_kqyg.jpg" alt="Shiny vinyl pants" />
+          <div class="img-caption">Shiny vinyl pants & metallics: Fashion’s attempt at a space-age glow</div>
+          <img src="https://m.media-amazon.com/images/I/71trw2ags3L._UY900_.jpg" alt="Chunky platform shoes" />
+          <div class="img-caption">Chunky platform shoes: A bold, high-stepping Y2K staple</div>
+        </div>
+        <div class="column">
+          <h3>Retro Web</h3>
+          <img src="https://cdn.shopify.com/s/files/1/1171/8456/files/Untitled5_1024x1024.png?v=1580179245" alt="GeoCities web design" />
+          <div class="img-caption">GeoCities: Where flashing GIFs and visitor counters ruled the web</div>
+        </div>
       </div>
       <h3>Dive deeper:</h3>
       <ul>
-        <li>Predictions vs. Reality</li>
-        <li>Y2K Aesthetics</li>
-        <li>Media Time Capsule</li>
+        <li>Y2K Predictions vs. Reality</li>
+        <li>Y2K Aesthetics & Style</li>
+        <li>Media Time Capsule: Movies & TV</li>
       </ul>
+
+      <div class="media-section">
+        <h4>🎵 Y2K Music Flashback</h4>
+        <iframe src="https://www.youtube.com/embed/7EjfbyCpAxA?si=3ZhewdbRGFdVp4rO" title="Y2K Music Playlist"></iframe>
+        <p style="text-align:center; font-size:0.9em;">Early 2000s hits – the soundtrack to a techy future!</p>
+      </div>
+
+      <div class="media-section">
+        <h4>📺 Y2K Tech in Pop Culture</h4>
+        <iframe src="https://www.youtube.com/embed/aUOZtRcnMpQ?si=BPTj9y9hWOnUZ8ey" title="Y2K Pop Culture Montage"></iframe>
+        <p style="text-align:center; font-size:0.9em;">See how movies, music and shows imagined our future!</p>
+      </div>
     </section>
   </div>
 </body>

@@ -1,18 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Dust Bowl Diaries – Lost in Time</title>
   <style>
-    body{font-family:Arial,sans-serif;margin:0;background:#f7f7f7}
-    .banner{background:#ccc;padding:20px;text-align:center;font-size:2em;font-weight:bold}
+    body{font-family:Arial,sans-serif;margin:0;background:#F6F2EC}
+    .banner{background:#D4C4A7;padding:20px;text-align:center;font-size:2em;font-weight:bold}
     .container{display:flex;padding:20px}
     .sidebar{width:220px;padding-right:20px}
-    .sidebar a{display:block;margin-bottom:10px;padding:10px;background:#fff;border:1px solid #aaa;text-decoration:none;color:#333;border-radius:4px}
-    .content{flex:1;background:#fff;padding:20px;border:1px solid #aaa}
+    .sidebar a{display:block;margin-bottom:10px;padding:10px;background:#EDE6D9;border:1px solid #aaa;text-decoration:none;color:#333;border-radius:4px}
+    .content{flex:1;background:#EDE6D9;padding:20px;border:1px solid #aaa}
     .columns{display:flex;gap:10px}
     .column{flex:1;padding:10px;background:#fafafa;border:1px solid #ddd}
+    .column img{width:100%;height:auto;display:block;margin-bottom:20px;border-radius:8px}
+
+    /* Dropdown menu styles */
+    .dropdown-menu {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+      width: max-content;
+    }
+
+    .dropdown-menu > li {
+      position: relative;
+      padding: 6px 12px;
+      background: #EDE6D9;
+      border: 1px solid #aaa;
+      border-radius: 4px;
+      margin-bottom: 6px;
+      cursor: pointer;
+    }
+
+    .dropdown-menu > li:hover {
+      background: #D4C4A7;
+    }
+
+    .submenu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #fafafa;
+      border: 1px solid #aaa;
+      border-radius: 4px;
+      list-style: none;
+      padding: 8px 0;
+      margin: 0;
+      min-width: 160px;
+      z-index: 100;
+    }
+
+    .submenu li {
+      padding: 6px 12px;
+      white-space: nowrap;
+    }
+
+    .submenu li:hover {
+      background: #D4C4A7;
+    }
+
+    .dropdown-menu > li:hover > .submenu {
+      display: block;
+    }
   </style>
 </head>
 <body>
@@ -20,22 +71,62 @@
   <div class="container">
     <nav class="sidebar">
       <h3>Explore Exhibits</h3>
-      <a href="dust-bowl.html">Dust Bowl Diaries</a>
-      <a href="y2k-futurism.html">2000s Futurism</a>
-      <a href="ancient-civilizations.html">Ancient Civilizations</a>
+      <a href="index.html">Dust Bowl Diaries</a>
+      <a href="y2k.html">2000s Futurism</a>
+      <a href="ancient-civ.html">Ancient Civilizations</a>
     </nav>
     <section class="content">
       <h2>The Dust Bowl Diaries</h2>
       <div class="columns">
-        <div class="column"><h3>Photos</h3><p>[Dust Bowl images]</p></div>
-        <div class="column"><h3>Quotes</h3><p>“Dust was thick as fog…”</p></div>
-        <div class="column"><h3>Then vs Now</h3><p>Homemade windbreaks → modern climate tech</p></div>
+        <div class="column">
+          <h3>Photos</h3>
+          <img src="https://d1z5o5vuzqe9y4.cloudfront.net/uploads/_AUTOx500_Fit_center-center_85_none/Dorothea-Lange-Florence-Thompson-and-her-children-in-a-pea-pickers-camp.-Nipomo-California.-March-1936.jpg" alt="Migrant Mother" />
+          <img src="https://infosys.ars.usda.gov/WindErosion/multimedia/dustbowl/big/cimarron_ok.jpg" alt="Dust Storm in Oklahoma" />
+          <img src="https://static.life.com/wp-content/uploads/migrated/2014/10/dust-bowl-09-984x1024.jpg" alt="Dust Bowl Scene" />
+        </div>
+        <div class="column">
+          <h3>Quotes</h3>
+          <p>“Nobody can go back to how it was. The dust bowl dried us all up bitter as seeds and spat us out all over the land and none of us yet has taken root.”<br /><em>—Katherine Longshore, <span style="font-style: italic;">A Tyranny of Petticoats</span></em></p>
+          <p>“The longing for rain has become almost an obsession. We remember the gentle all-night rains that used to make a grateful music on the shingles close above our heads... But we waken to another day of wind and dust and hopes deferred, of attempts to use to the utmost every small resource, to care for the stock and poultry as well as we can with our scanty supplies, to keep our balance and to trust that upon some happier day our wage may even yet come in.”<br /><em>—Caroline Henderson, <span style="font-style: italic;">Letters from the Dust Bowl</span></em></p>
+          <p>“Only thing that is higher than that dust is your debts. Dust settles, but debts don't.”<br /><em>—Guy Logsdon, <span style="font-style: italic;">The Encyclopedia of Oklahoma History and Culture</span></em></p>
+        </div>
+        <div class="column">
+          <h3>Then vs Now</h3>
+          <ul>
+            <li><strong>Then:</strong> Windbreaks made from old wood and barbed wire<br /><strong>Now:</strong> Advanced erosion control systems and sustainable farming</li>
+            <li><strong>Then:</strong> Massive crop failures due to drought and soil loss<br /><strong>Now:</strong> Use of drought-resistant crops and precision agriculture</li>
+            <li><strong>Then:</strong> Migration from Oklahoma, Texas, Kansas due to poor conditions<br /><strong>Now:</strong> Same regions now incorporate climate monitoring and federal aid systems</li>
+            <li><strong>Then:</strong> Dust storms darkened the skies for hours<br /><strong>Now:</strong> Air quality alerts and real-time environmental data available to residents</li>
+            <li><strong>Then:</strong> Limited access to water and irrigation<br /><strong>Now:</strong> Water conservation technology and managed aquifers</li>
+          </ul>
+        </div>
       </div>
       <h3>Also explore:</h3>
-      <ul>
-        <li>Tools of the Time</li>
-        <li>Music & Radio</li>
-        <li>Everyday Jobs</li>
+      <ul class="dropdown-menu">
+        <li>
+          Tools of the Time
+          <ul class="submenu">
+            <li>Hand Plow</li>
+            <li>Windmill</li>
+            <li>Mechanical Thresher</li>
+          </ul>
+        </li>
+        <li>
+          Music & Radio
+          <ul class="submenu">
+            <li>Country Folk Songs</li>
+            <li>Dust Bowl Ballads</li>
+            <li>Early Radio Broadcasts</li>
+          </ul>
+        </li>
+        <li>
+          Everyday Jobs
+          <ul class="submenu">
+            <li>Farm Laborer</li>
+            <li>Blacksmith</li>
+            <li>Grain Elevator Operator</li>
+          </ul>
+        </li>
       </ul>
     </section>
   </div>

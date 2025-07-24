@@ -2,31 +2,70 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Ancient Civilizations – Lost in Time</title>
-  <style>…same as above…</style>
+  <title>Ancient Civilizations – Lost in Time</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #111e45 }
+    .banner { background: #2e3445; padding: 20px; text-align: center; font-size: 2em; font-weight: bold }
+    .container { display: flex; padding: 20px }
+    .sidebar { width: 220px; padding-right: 20px }
+    .sidebar a { display: block; margin-bottom: 10px; padding: 10px; background: #9FA5B4; border: 1px solid #aaa; text-decoration: none; color: #fff; border-radius: 4px }
+    .content { flex: 1; background: #B7BBC7; padding: 20px; border: 1px solid #aaa }
+    .columns { display: flex; gap: 10px }
+    .column { flex: 1; padding: 10px; background: #E7E8EC; border: 1px solid #ddd }
+    .column img { width: 100%; height: auto; display: block; margin-bottom: 5px; border-radius: 8px }
+    .img-caption { font-size: 0.9em; color: #333; margin-bottom: 20px; text-align: center }
+    .media-section { margin-top: 30px; background: #E7E8EC; padding: 15px; border-radius: 8px; border: 1px solid #ccc }
+    .media-section h4 { margin-top: 0 }
+    iframe { width: 100%; height: 150px; border: none; border-radius: 8px }
+  </style>
 </head>
 <body>
   <div class="banner">Lost in Time: Mini Museums!</div>
   <div class="container">
     <nav class="sidebar">
       <h3>Explore Exhibits</h3>
-      <a href="dust-bowl.html">Dust Bowl Diaries</a>
-      <a href="y2k-futurism.html">2000s Futurism</a>
-      <a href="ancient-civilizations.html">Ancient Civilizations</a>
+      <a href="index.html">Dust Bowl Diaries</a>
+      <a href="y2k.html">2000s Futurism</a>
+      <a href="ancient-civ.html">Ancient Civilizations</a>
     </nav>
     <section class="content">
       <h2>The Ancient World’s Lesser-Known Civilizations</h2>
       <div class="columns">
-        <div class="column"><h3>Sogdians</h3><p>[Map + trade routes]</p></div>
-        <div class="column"><h3>Muisca</h3><p>Goldwork & rituals</p></div>
-        <div class="column"><h3>Etruscans</h3><p>Burials & beliefs</p></div>
+        <div class="column">
+          <h3>Sogdians</h3>
+          <img src="https://sogdians.si.edu/wp-content/uploads/2019/08/n1-f1-07100.jpg" alt="Sogdian Trade Routes Map">
+          <div class="img-caption">Sogdian trade routes connecting East and West on the Silk Road</div>
+          <img src="https://sogdians.si.edu/wp-content/uploads/2018/08/S4-2-Banqueters-rhyton-1585x1600.jpg" alt="Sogdian Wall Painting">
+          <div class="img-caption">Vibrant wall paintings from Panjakent show their artistic legacy</div>
+        </div>
+        <div class="column">
+          <h3>Muisca</h3>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Gold_Museum%2C_Bogota_%2836145671394%29.jpg" alt="Muisca gold raft artifact">
+          <div class="img-caption">Muisca golden raft: ceremonial offering symbolizing El Dorado</div>
+          <img src="https://myquest.blog/wp-content/uploads/2019/10/muisca-raft-painting.jpg?w=806&h=605" alt="Ritual ceremony">
+          <div class="img-caption">Depiction of Muisca ritual ceremony and sacred lake offerings</div>
+        </div>
+        <div class="column">
+          <h3>Etruscans</h3>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Monterozzi_necropolis_%E2%80%94_Tomb_of_the_Leopards.jpg" alt="Etruscan Tomb of the Leopards">
+          <div class="img-caption">Tomb of the Leopards: joyful banquet scenes celebrating the afterlife</div>
+          <img src="https://smarthistory.org/wp-content/uploads/2022/06/15623415987_90b8d6336f_o.jpg" alt="Etruscan Sarcophagus">
+          <div class="img-caption">Etruscan sarcophagi emphasized individuality and family legacy</div>
+        </div>
       </div>
+
       <h3>Explore more:</h3>
       <ul>
         <li>Strangest Beliefs</li>
         <li>Burial Customs</li>
         <li>Legacies Today</li>
       </ul>
+
+      <div class="media-section">
+        <h4>📚 Myths, Rituals, and Culture</h4>
+        <iframe src="https://www.youtube.com/embed/hmbuCSx5peU?si=Eq4VIifZegcdhnYh" title="Ancient Rituals Documentary"></iframe>
+        <p style="text-align:center; font-size:0.9em;">Uncover spiritual beliefs and strange rituals of the past</p>
+      </div>
     </section>
   </div>
 </body>
